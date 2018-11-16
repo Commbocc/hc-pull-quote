@@ -1,30 +1,29 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>
-  </div>
+  <a href="#">
+    <div class="row no-margin no-gutters align-items-center">
+      <div class="col-xs-12 col-sm-4 col-sm-push-8">
+        <img :src="imgSrc" :alt="imgAlt" class="img-responsive img-fluid img-circle img-thumbnail center-block">
+      </div>
+
+      <div class="col-xs-12 col-sm-8 col-sm-pull-4">
+        <blockquote class="h2 font-italic text-muted">
+          <slot></slot>
+        </blockquote>
+      </div>
+    </div>
+  </a>
 </template>
 
 <script>
 export default {
-  name: 'app',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
+  props: {
+    imgSrc: {
+      type: String,
+      required: true
+    },
+    imgAlt: {
+      type: String,
+      required: true
     }
   }
 }

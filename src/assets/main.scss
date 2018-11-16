@@ -1,7 +1,31 @@
-// @import "~hc-html-wrapper/dist/static/css/app.css";
+.hc-pull-quote {
+  a {
+    text-decoration: none !important;
+  }
 
-#app {
-  // font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  // -webkit-font-smoothing: antialiased;
-  // -moz-osx-font-smoothing: grayscale;
+  blockquote {
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    // quotes: "\201C""\201D""\2018""\2019";
+    font-weight: 400 !important;
+  }
+
+  blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }
+
+  blockquote p {
+    display: inline;
+  }
+
+  @media (max-width: 769px) {
+    img {
+      width: 50%;
+    }
+  }
 }

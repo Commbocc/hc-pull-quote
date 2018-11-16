@@ -1,12 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
 
-// import router from './router'
-// import store from './store'
-
-new Vue({
-  el: '#app',
-  // router,
-  // store,
-  render: h => h(App)
+Array.prototype.forEach.call(document.getElementsByClassName('hc-pull-quote'), (el, i) => {
+  new Vue({
+    el,
+    components: { PullQuote: App }
+  })
 })
