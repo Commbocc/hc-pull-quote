@@ -4,7 +4,7 @@
 
 ## Basic Use
 
-Include the "Pull Quote" script in the presentation details of the Sitecore page you'd like the Pull Quote to be placed.
+Include the "Pull Quote" script in the __FINAL__ presentation details of the Sitecore page you'd like the Pull Quote to be placed.
 
 * Placeholder `script-content`
 * Data Source `/sitecore/cotnent/Global/Scripts/Pull Quote`
