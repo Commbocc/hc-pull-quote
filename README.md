@@ -2,6 +2,23 @@
 
 > A Vue.js project
 
+## Basic Use
+
+Include the "Pull Quote" script in the presentation details of the Sitecore page you'd like the Pull Quote to be placed.
+
+* Placeholder `script-content`
+* Data Source `/sitecore/cotnent/Global/Scripts/Pull Quote`
+
+Place the following code in the body of the article, replacing the `href`, `img-src` and `img-alt` attributes as well as the text within the `<a>` element:
+
+```html
+<div class="hc-pull-quote">
+  <a href="#" is="PullQuote" img-src="#" img-alt="">
+    Your Text Here
+  </a>
+</div>
+```
+
 ## Build Setup
 
 ``` bash
