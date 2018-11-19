@@ -9,15 +9,18 @@ Include the "Pull Quote" script in the __FINAL__ presentation details of the Sit
 * Placeholder `script-content`
 * Data Source `/sitecore/cotnent/Global/Scripts/Pull Quote`
 
-Place the following code in the body of the article, replacing the `href`, `img-src` and `img-alt` attributes as well as the text within the `<a>` element:
+Place the following code in the body of the article:
 
 ```html
 <div class="hc-pull-quote">
-  <a href="#" is="PullQuote" img-src="#" img-alt="">
+  <a href="#" is="PullQuote">
     Your Text Here
+    <img src="library/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.ashx" alt="Alt Text">
   </a>
 </div>
 ```
+
+Replace the `href` attribute and the text within the `<a>` element of the `PullQuote` component. Replace the `<img>` code by inserting or pasting a Sitecore image.
 
 ## Build Setup
 
